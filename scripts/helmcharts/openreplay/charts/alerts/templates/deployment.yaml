@@ -60,7 +60,7 @@ spec:
             - name: ch_username
               value: '{{ .Values.global.clickhouse.username }}'
             - name: ch_password
-              value: '{{ .Values.global.clickhouse.passwordk }}'
+              value: '{{ .Values.global.clickhouse.password }}'
             - name: pg_user
               value: '{{ .Values.global.postgresql.postgresqlUser }}'
             - name: pg_password
