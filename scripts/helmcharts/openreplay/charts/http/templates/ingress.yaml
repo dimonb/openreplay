@@ -44,7 +44,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: minio
-  namespace: "{{(split "." .Values.global.s3.endpoint)._1}}"
+  namespace: openreplaydb
 spec:
   ingressClassName: "{{ tpl .Values.ingress.className . }}" 
   rules:
