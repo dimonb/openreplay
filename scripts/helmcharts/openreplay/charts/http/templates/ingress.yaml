@@ -45,6 +45,9 @@ kind: Ingress
 metadata:
   name: minio
   namespace: openreplaydb
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
 spec:
   ingressClassName: "{{ tpl .Values.ingress.className . }}" 
   rules:
